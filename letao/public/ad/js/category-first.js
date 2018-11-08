@@ -7,15 +7,21 @@ $(function(){
     getdata(page,pageSize)
 
 
-console.log(totalPage)
     $('#pagepre').on('click',function(){
-        page++
+       page<totalPage ? page++ : page = totalPage
+        // if(page <totalPage){
+        //     page++
+           
+        // }
+       
         getdata(page,pageSize)
+        // console.log(page)
     })
     $('#pagenex').on('click',function(){
-        page--
+        page>1 ? page-- : page = 1
         // console.log(page)
         getdata(page,pageSize)
+        // console.log(page)
     })
     
     function getdata(page,pageSize){
@@ -33,8 +39,41 @@ console.log(totalPage)
                 // console.log(html)
                 // $('#productTb').html(html)
                 // $(html).appendTo($('#productTb'))
-                $('#productTb').append(html)
+                $('#productTb').html(html)
             }
         })
     }
+
+
+// 点击添加分类
+
+   
+    $('#conservation').on('click',function(){
+        var categoryName = $('#categoryName').val()
+        if (!categoryName){
+            alert("请输入内容")
+            return false
+        }
+        $.ajax({
+            url:"/category/addTopCategory",
+            type:'POST',
+            data: {
+                categoryName:categoryName
+            },
+            success:function(res){
+                // console.log(res)
+                if (res.success){
+                    // $('.category-first').hide()
+                    // $('.modal-backdrop').hide()
+                    // getdata(page,pageSize)
+                    location.reload()// 页面刷新
+
+                }
+            }
+        })          
+    })
+    
+    
+
+
 })
