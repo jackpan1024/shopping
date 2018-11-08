@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./assets/mui/css/mui.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/loginIn.css">
+    <script src="./assets/mui/js/mui.min.js"></script>
+    <!-- <script src="./assets/zepto/zepto.min.js"></script> -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/regist.js"></script>
+    <style>
+        .getResponse {
+           position: absolute;
+           top: 0;
+           right: 0;
+           transform: translateY(50%);
+            color: blue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+        <h1 class="mui-title">用户注册</h1>
+        <a href="javascript:;" class="mui-icon mui-icon-back mui-pull-right"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab my-footer">
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="javasript:;">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="loginIn.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>用户名</label>
+                <input type="text" class="username mui-input-clear" placeholder="请输入用户名">
+            </div>
+            <div class="mui-input-row">
+                <label>手机号</label>
+                <input type="text" class="mobile mui-input-clear" placeholder="请输入手机号">
+            </div>
+            <div class="mui-input-row">
+                <label>密码</label>
+                <input type="password" class="password mui-input-password" placeholder="请输入密码">
+            </div>
+            <div class="mui-input-row">
+                <label>确认密码</label>
+                <input type="password" class="passwordAgain mui-input-password" placeholder="请确认密码">
+            </div>
+            <div class="mui-input-row">
+                    <label>认证码</label>
+                    <input type="text" class="vCode mui-input-clear" placeholder="请输入认证码">
+                    <span class="getResponse" >获取认证码</span>
+                </div>
+            <div class="mui-button-row">
+                    <button type="button" class="mui-btn mui-btn-primary" >注册</button>
+                <!-- <input type="submit" class="login_in_sb" value="注册"> -->
+            </div>
+            <a class="a" href="loginIn.html">返回登录</a>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

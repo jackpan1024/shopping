@@ -1,0 +1,41 @@
+@sb:skyblue;
+@wf:#fff;
+body {
+    background-color: #fff;
+}
+.mui-bar {
+     background-color: @sb;
+     a {
+       color:  @wf;
+     }
+     &.mui-bar-tab {
+         a {
+             color: #fff;
+         }
+     }
+}
+.mui-content {
+    background-color: #fff;
+    >p {
+        text-align: center;
+        line-height: 40px;
+        // margin: 10px;
+        border-bottom: 1px solid #ccc;
+        >a {
+            color: #000;
+            // text-align: center;
+        }
+    }
+    .list {
+        li {
+            padding-left: 15px;
+            border-bottom: 1px solid #ccc;
+            p:nth-of-type(1){
+                padding-right: 20px;
+                span:nth-of-type(2) {
+                    float: right
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+body {
+  background-color: #fff;
+}
+.mui-bar {
+  background-color: skyblue;
+}
+.mui-bar a {
+  color: #fff;
+}
+.mui-bar.mui-bar-tab a {
+  color: #fff;
+}
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .Tips {
+  background-color: rgba(100, 100, 100, 0.3);
+  width: 40%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: none;
+}
+.mui-content .search {
+  position: relative;
+  padding: 10px;
+}
+.mui-content .search input {
+  height: 40px;
+}
+.mui-content .search #search-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: blue;
+  color: #fff;
+}
+.mui-content .history-top {
+  padding: 10px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.mui-content .history-top #clearBtn {
+  font-size: 16px;
+}
+.mui-content .list {
+  font-size: 16px;
+  padding: 0 10px;
+  border-bottom: none;
+}
+.mui-content .list li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}

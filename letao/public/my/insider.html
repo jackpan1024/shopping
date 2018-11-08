@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="./css/insider.css">
+    <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.min.css">
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="./assets/artTemplate/template-web.js"></script>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="./js/insider.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<h1 class="mui-title">会员中心</h1>
+        <a href="javascript:;" class="mui-icon mui-icon-back mui-pull-left"></a>
+	</header>
+    <nav class="mui-bar mui-bar-tab my-footer">
+        <a class="mui-tab-item " href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="javasript:;">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="loginIn.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+	<div class="mui-content">
+		<div class="userInfo">
+            
+        </div>
+        <ul>
+            <li>
+                <a href="javascript:;">修改密码</a>
+                <span class="mui-icon mui-icon-arrowright"></span>
+            </li>
+            <li>
+                <a href="javascript:;">我的购物车</a>
+                <span class="mui-icon mui-icon-arrowright"></span>
+            </li>
+            <li>
+                <a href="addres.html">收货地址管理</a>
+                <span class="mui-icon mui-icon-arrowright"></span>
+            </li>
+            <li class="loginout">退出登录</li>
+        </ul>
+    </div>
+    <script type="text/template" id="user">
+        <a href="javascipt:;">
+            <img src="./images/user.jpg" alt="">
+        </a>
+        <span>{{mobile}}</span> 
+        <span>账号：{{username}}</span> 
+    </script>
+</body>
+</html>

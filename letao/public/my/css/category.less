@@ -1,0 +1,70 @@
+@sb:skyblue;
+@wf:#fff;
+.mui-bar {
+    background-color: @sb;
+    a {
+      color:  @wf;
+    }
+    &.mui-bar-tab {
+        a {
+            color: #fff;
+        }
+    }
+}
+.nav {
+   width: 100%;
+   padding: 10px;
+   overflow: hidden;
+   // display: flex;
+   li {
+      width: 33.33%;
+      float: left;
+      a {
+          width: 100%;
+          img {
+           width: 100%;
+           display: block;
+       }
+      }
+      
+   }
+}
+.mui-content {
+    // background-color: red;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    .content-left {
+        width: 100px;
+        background-color: #ccc;
+        padding-right: 10px;
+        // position: relative;
+        ul{
+            // position: absolute;
+            li {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #fff;
+            &.active {
+                background-color: #ccc;
+            }
+        }
+        }
+        
+    }
+    .content-right {
+        flex: 1;
+        li {
+            width: 33.33%;
+            float: left;
+            background-color: #fff;
+            img {
+                width: 100%;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
