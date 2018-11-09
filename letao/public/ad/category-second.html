@@ -84,8 +84,8 @@
 					</tbody>
 	        	</table>
 	        	<div class="btn-group page">
-	        		<div class="btn btn-default" id="prevBtn">上一页</div>
-	        		<div class="btn btn-default" id="nextBtn">下一页</div>
+	        		<div class="btn btn-default" id="pagepre">上一页</div>
+	        		<div class="btn btn-default" id="pagenex">下一页</div>
 	        	</div>
 	        </div>
 		</div>
@@ -127,12 +127,12 @@
 	<script type="text/template" id="secondData">
 		{{ each rows}}
 		<tr>
-			<td>7</td>
-			<td>阿萨德2</td>
+			<td>{{$value.categoryId}}</td>
+			<td>{{$value.brandName}}</td>
 			<td>
-				<img src="images/brand6.png">
+				<img src="{{$value.brandLogo}}">
 			</td>
-			<td>女士馆</td>
+			<td>{{$value.categoryName}}</td>
 		</tr>
 		{{/each}}
 	</script>
